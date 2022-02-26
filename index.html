@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>  Home  | Antoinette's Recipes </title>
+	<!--Get favicon iamge, this is just a template  -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+	p    {font-size: 1.2rem;
+	line-height: 1.8rem;}
+	</style>
+</head>
+
+<body>
+	<a href="#mainContent">Skip to main content</a>
+	<header>
+		
+		<a href="index.html">	<img src="media/newLogo-01.png" alt="Best Recipies Logo" width="200" > </a>
+		<nav>
+			<ul>
+				<li><a href="index.html" aria-current="page">Home</a></li>
+				<li><a href="recepies.html">Recipes</a></li>
+                <li><a href="contat.html">Contact Us </a></li>
+                <li><a href="about.html">About</a></li>
+
+			</ul>
+
+		</nav>
+		<input id="searchBar" type="text" placeholder="Search..">
+
+
+	</header>
+	<main id="mainContent">
+        <img class="naslovna" src="media/headImage.jpg" alt="header image">
+
+		<!--This is  a quoute about food on a picture-->
+<blockquote cite="https://www.goodreads.com/quotes/tag/food">
+	One cannot think well, love well, sleep well, if one has not dined well. <br>
+	 <p>&#8208;Virginia Woolf </p>
+</blockquote>
+		<div class="introSection">		
+		</div>
+<!-- This is a section with recepy cards-->
+        <div class="recepiesSection">
+
+			<h2><a href="recepies.html">Recepies </a> </h2>
+	<div class="recepies" id="img1"> 
+    <img  src="media/margarita1-01.png" alt="Picture of Pizza" width="400" >
+<a href="singleRecepie.html"> Pizza Margarita </a>
+</div>
+<div class="recepies" id="img2">  
+    <img  src="media/2-01.png" alt="Picutre of an avocado toast with an egg on top " width="400" >
+<a href="singleRecepie.html"> Avocado Toast</a>
+</div>
+<div class="recepies" id="img3">  
+    <img  src="media/3a-01.png" alt="Picture of pancakes " width="400" >
+<a href="singleRecepie.html"> Pancakes </a>
+</div>
+
+    </div>
+
+	<div class="ourTeamSection">
+		<h2>Our Team </h2>
+		<p>Hello, we are very extied to have you hear. We are a group of professionals looking
+			to make the world a better place with our tasty recepies. We found the Recepies group 
+			in 2011, and enve thought we had some changes on our team or goal has not changed. 
+			Right now 9 of us are working and exploring every day to find new ways and tastes to 
+			bring to your homes. We all live in different parts of the country but this does not 
+			prevent us from sharing the same passion and new things we find along the way amongst 
+			ourselves adn obvioulsy you! If you are interested in finding mroe about us as 
+			individuals and our lives clikd the button bellow. 
+		</p>
+		<img src="media/cooks.jpg" alt="Picture of the team cooking together " >
+			<a href="about.html"> Learn More About Us </a>
+
+		<!--	<div class="teamCardsH">
+				<img src="media/pancakes.jpg" alt="Picture of pancakes " width="400" heihgt="500">
+<h3>Madeline Petronilla</h3>
+<p>General Manager </p>
+			</div>
+-->
+			
+	</div>
+
+	<div class="membershipSection">
+		<div id="signUp">
+		<form action="/action_page.php" >
+			<div class="container">
+			  <h2>Sign Up</h2>
+			  <p>Please fill in this form to create an account.</p>
+			  <hr>
+			  <label for="fname"><b>First Name:</b></label>
+			  <input id="fname" class="floatRight" type="text" placeholder="Enter Name" name="fname" required>
+			  <br>
+			  <label for="lname"><b>Last Name:</b></label>
+			  <input id="lname" class="floatRight" type="text" placeholder="Enter Name" name="lname" required>
+			  <br>
+			  <label for="email"><b>Email</b></label>
+			  <input id="email" class="floatRight" type="text" placeholder="Enter Email" name="email" required>
+			  <br>
+			  <label for="psw"><b>Password</b></label>
+			  <input id="psw" class="floatRight" type="password" placeholder="Enter Password" name="psw" required>
+			  <br>
+			  <label for="psw-repeat"><b>Repeat Password</b></label>
+			  <input id="psw-repeat" class="floatRight" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  <br>
+			  <label>
+				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+			  </label>
+			  
+			  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+		  
+			  <div class="clearfix">
+				<button type="button" class="cancelbtn">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			  </div>
+			</div>
+		  </form>
+		</div>
+
+		<div id="logIn">
+		  <form action="action_page.php" method="post">
+			  <h2>Already a Memebr? Log In</h2>
+			
+		  
+			<div class="container">
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+		  
+			  <label for="psw"><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+		  
+			  <button type="submit">Login</button>
+			  <label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			  </label>
+			</div>
+		  
+			<div class="container" >
+			  <button type="button" class="cancelbtn">Cancel</button>
+			  <span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		  </form>
+		</div>
+	
+<div id="newsletter">
+<form action="action_page.php">
+	
+	<div  class="container">
+	  <h2>Subscribe to our Newsletter</h2>
+	  <p>If you are interested in weekly  updates and disscussion, sign  up for our Newsletter</p>
+	</div>
+  
+	<div class="container" style="background-color:white">
+	  <input type="text" placeholder="Name" name="name" required>
+	  <input type="text" placeholder="Email address" name="mail" required>
+	  <label>
+		<input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+	  </label>
+	</div>
+  
+	<div class="container">
+	  <input type="submit" value="Subscribe">
+	</div>
+  </form>
+</div>
+	
+</div>
+	
+	</main>
+	<footer>
+		<div class= "address">
+			<address> 
+				<b>Visit us at:</b><br>
+				2036 Roosevelt Wilson Lane, 5<br>
+				 San Bernardino CA 92405<br>
+				Phone: 909-553-7605
+				</address>
+		</div>
+		<div class="socialMedia">
+			<a href="#" class="facebook"> <img src="media/icons/facebook.png" alt="Facebook Icon" width="100" > Facebook</a>
+			<a href="#" class="twitter"> <img src="media/icons/twitter.png" alt="Twitter Icon" width="100" > Twitter</a>
+			<a href="#" class="youtube"> <img src="media/icons/youTube.png" alt="YouTube Icon" width="100" > YouTube</a>
+			<a href="#" class="instagram">  <img src="media/icons/instagram.png" alt="Instagram Icon" width="100" >Instagram</a>
+			<a href="#" class="pinterest">  <img src="media/icons/pinterest.png" alt="Pinterest Icon" width="100"> Pinterest </a>
+		  </div>
+		<nav>
+			<ul>
+				<li><a href="index.html" aria-current="page">Home</a></li>
+				<li><a href="recepies.html">Recipes</a></li>
+				<li><a href="contat.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>
